@@ -6,6 +6,9 @@
     "dev": "webpack-dev-server --open-page \"dist/index.html\"",
     "build": "webpack"
   },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
+  },
   "devDependencies": {
     "webpack": "4.29.4",
     "webpack-cli": "3.2.3",

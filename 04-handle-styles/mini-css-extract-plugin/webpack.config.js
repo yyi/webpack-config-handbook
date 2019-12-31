@@ -23,7 +23,7 @@ module.exports = {
     }],
   },
   plugins: [
-    new htmlPlugin({ title: path.basename(__dirname) }),
+    new htmlPlugin({ title: path.basename(__dirname),template:path.join(__dirname,'./src/index_template.html'),  }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',

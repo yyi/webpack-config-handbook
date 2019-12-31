@@ -1,6 +1,6 @@
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: flex-start;
+  justify-content: start;
+  text-align: right;
 }
