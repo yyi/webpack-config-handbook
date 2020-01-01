@@ -9,6 +9,11 @@ module.exports = {
     chunkFilename: '[name].js',
   },
   mode: 'development',
+  optimization:{
+    splitChunks:{
+      chunks:'all'
+    }
+  },
   plugins: [new htmlPlugin({ title: path.basename(__dirname) })],
   devServer: {
     publicPath: '/dist/',

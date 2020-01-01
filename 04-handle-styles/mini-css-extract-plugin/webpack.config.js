@@ -33,6 +33,11 @@ module.exports = {
       },
     },],
   },
+  optimization:{
+    splitChunks:{
+      chunks:'all'
+    }
+  },
   plugins: [
     new htmlPlugin({ title: path.basename(__dirname),template:path.join(__dirname,'./src/index_template.html') }),
     new MiniCssExtractPlugin({
