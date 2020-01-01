@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>mini-css-extract-plugin&html-template-plugin</title>
@@ -7,5 +7,6 @@
 <p class="mr-5">
     this is a template page
 </p>
+<input type="text" name="userName" value="James Carrot" th:value="${user.name}" />
 </body>
 </html>

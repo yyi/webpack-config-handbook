@@ -20,10 +20,21 @@ module.exports = {
         },
         'css-loader'
       ],
-    }],
+    },{
+      test: /\.html$/,
+      use: {
+        loader: "html-loader",
+        options: {
+          attrs: false,
+          minimize: false,
+          removeComments: false,
+          collapseWhitespace: false,
+        },
+      },
+    },],
   },
   plugins: [
-    new htmlPlugin({ title: path.basename(__dirname),template:path.join(__dirname,'./src/index_template.html'),  }),
+    new htmlPlugin({ title: path.basename(__dirname),template:path.join(__dirname,'./src/index_template.html') }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
       chunkFilename: '[id].css',
